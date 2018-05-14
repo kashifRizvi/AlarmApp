@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4B786D9420AA296F009F5D8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B786D9320AA296F009F5D8E /* AppDelegate.swift */; };
-		4B786D9620AA296F009F5D8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B786D9520AA296F009F5D8E /* ViewController.swift */; };
+		4B786D9620AA296F009F5D8E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B786D9520AA296F009F5D8E /* HomeViewController.swift */; };
 		4B786D9920AA296F009F5D8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B786D9720AA296F009F5D8E /* Main.storyboard */; };
 		4B786D9C20AA296F009F5D8E /* AlarmApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B786D9A20AA296F009F5D8E /* AlarmApp.xcdatamodeld */; };
 		4B786D9E20AA2972009F5D8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B786D9D20AA2972009F5D8E /* Assets.xcassets */; };
 		4B786DA120AA2972009F5D8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B786D9F20AA2972009F5D8E /* LaunchScreen.storyboard */; };
 		4B786DAC20AA2973009F5D8E /* AlarmAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B786DAB20AA2973009F5D8E /* AlarmAppUITests.swift */; };
+		4B786DB720AA3058009F5D8E /* CreateAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B786DB620AA3058009F5D8E /* CreateAlarmViewController.swift */; };
+		4B786DB920AA3380009F5D8E /* AlarmDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B786DB820AA3380009F5D8E /* AlarmDetailCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +31,7 @@
 /* Begin PBXFileReference section */
 		4B786D9020AA296F009F5D8E /* AlarmApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B786D9320AA296F009F5D8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4B786D9520AA296F009F5D8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B786D9520AA296F009F5D8E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4B786D9820AA296F009F5D8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B786D9B20AA296F009F5D8E /* AlarmApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlarmApp.xcdatamodel; sourceTree = "<group>"; };
 		4B786D9D20AA2972009F5D8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		4B786DA720AA2973009F5D8E /* AlarmAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlarmAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B786DAB20AA2973009F5D8E /* AlarmAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmAppUITests.swift; sourceTree = "<group>"; };
 		4B786DAD20AA2973009F5D8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B786DB620AA3058009F5D8E /* CreateAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAlarmViewController.swift; sourceTree = "<group>"; };
+		4B786DB820AA3380009F5D8E /* AlarmDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmDetailCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				4B786D9320AA296F009F5D8E /* AppDelegate.swift */,
-				4B786D9520AA296F009F5D8E /* ViewController.swift */,
+				4B786D9520AA296F009F5D8E /* HomeViewController.swift */,
+				4B786DB620AA3058009F5D8E /* CreateAlarmViewController.swift */,
+				4B786DB820AA3380009F5D8E /* AlarmDetailCell.swift */,
 				4B786D9720AA296F009F5D8E /* Main.storyboard */,
 				4B786D9D20AA2972009F5D8E /* Assets.xcassets */,
 				4B786D9F20AA2972009F5D8E /* LaunchScreen.storyboard */,
@@ -200,8 +206,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B786D9620AA296F009F5D8E /* ViewController.swift in Sources */,
+				4B786D9620AA296F009F5D8E /* HomeViewController.swift in Sources */,
+				4B786DB920AA3380009F5D8E /* AlarmDetailCell.swift in Sources */,
 				4B786D9C20AA296F009F5D8E /* AlarmApp.xcdatamodeld in Sources */,
+				4B786DB720AA3058009F5D8E /* CreateAlarmViewController.swift in Sources */,
 				4B786D9420AA296F009F5D8E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
